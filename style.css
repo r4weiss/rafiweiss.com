@@ -142,7 +142,7 @@ h4 {
 .card-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 2em;
+	grid-gap: 20px;
 	width: 1000px;
 	margin: auto;
 }
