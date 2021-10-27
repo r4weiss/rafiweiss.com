@@ -85,13 +85,11 @@ a {
 }
 
 .gradient-text {
-	background-image: linear-gradient(to right, var(--medium-primary), #e5a2af);
+	background: linear-gradient(to right, var(--medium-primary), #e5a2af);
 	background-clip: text;
-	color: transparent;
-
-	/* background: -webkit-linear-gradient(to right, var(--medium-primary), #e5a2af); */
 	-webkit-background-clip: text;
-	/* -webkit-text-fill-color: transparent; */
+	color: transparent;
+	-webkit-text-fill-color: transparent;
 }
 
 .icon-link {
@@ -126,7 +124,7 @@ a {
 }
 
 .btn-sm {
-	font-size: 14.5;
+	font-size: 14.5px;
 }
 
 .btn-lg {
