@@ -42,6 +42,8 @@
 	margin: 0;
 	font-family: 'Work Sans', sans-serif;
 	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
 }
 
 body {
@@ -203,7 +205,7 @@ a {
 }
 
 .name {
-	font-size: 80px;
+	font-size: 96px;
 }
 
 .hero-blurb {
@@ -275,6 +277,8 @@ a {
 
 .card:hover .dimmer {
 	opacity: 0;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
 }
 
 .card-1 .card-overlay {
