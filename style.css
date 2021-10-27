@@ -88,6 +88,10 @@ a {
 	background-image: linear-gradient(to right, var(--medium-primary), #e5a2af);
 	background-clip: text;
 	color: transparent;
+
+	/* background: -webkit-linear-gradient(to right, var(--medium-primary), #e5a2af); */
+	-webkit-background-clip: text;
+	/* -webkit-text-fill-color: transparent; */
 }
 
 .icon-link {
