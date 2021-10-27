@@ -234,6 +234,9 @@ a {
 	border-radius: 24px;
 	text-align: center;
 	max-width: 280px;
+	top: 0px;
+	position: relative;
+	overflow: hidden;
 }
 
 .card h4 {
@@ -255,19 +258,14 @@ a {
 	right: 0;
 	height: 100%;
 	width: 100%;
-	margin-top: 75%;
+	margin-top: 100%;
+	border-radius: 24px;
 }
 
 .overlay-text {
 	font-weight: 700;
 	font-size: 20px;
 	width: 40%;
-}
-
-.card {
-	top: 0px;
-	position: relative;
-	overflow: hidden;
 }
 
 .card:hover .dimmer {
@@ -360,7 +358,7 @@ footer {
 .footer-flex {
 	display: flex;
 	justify-content: center;
-	gap: 200px;
+	gap: 5%;
 }
 
 .footer-column p {
