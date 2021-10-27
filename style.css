@@ -87,10 +87,16 @@ a {
 .gradient-text {
 	background: linear-gradient(to right, var(--medium-primary), #e5a2af);
 	background: -webkit-linear-gradient(left, var(--medium-primary), #e5a2af);
+
 	background-clip: text;
 	-webkit-background-clip: text;
+	-moz-background-clip: text;
+
 	color: transparent;
 	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+
+	/* color: var(--medium-primary); */
 }
 
 .icon-link {
