@@ -19,6 +19,15 @@ const navSlide = () => {
 		});
 		//burger animation
 		burger.classList.toggle('toggle');
+
+		//stop scrolling when menu is open
+		if (nav.classList.contains('nav-active')) {
+			document.body.style.position = 'fixed';
+		} else {
+			document.body.style.position = '';
+		}
+
+		console.log(nav.classList);
 	});
 };
 
