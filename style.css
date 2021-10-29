@@ -159,7 +159,7 @@ a {
 .section-title {
 	text-align: center;
 	margin: 0px auto 32px;
-	width: max-content;
+	max-width: 80%;
 }
 
 .section-title img {
@@ -170,12 +170,12 @@ a {
 /* -----------------------------------------    MAIN NAV SECTION    -------------------------------------------- */
 
 .top-nav {
-	height: 70px;
+	height: 10vh;
 	background-color: #f1ede6;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 24px;
+	padding: 0 24px;
 	border-bottom: var(--light-green) solid 1px;
 }
 
@@ -184,9 +184,77 @@ a {
 	color: var(--dark-grey);
 }
 
-.top-menu {
+.nav-links {
 	display: flex;
 	list-style: none;
+}
+
+.burger {
+	display: none;
+}
+
+.burger div {
+	width: 24px;
+	height: 2.5px;
+	background-color: var(--dark-grey);
+	margin: 4px;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+		/* position: fixed; */
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 90vh;
+		top: 10vh;
+		background-color: var(--tan);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		transform: translateX(100%);
+		z-index: 1;
+		/* overflow: hidden; */
+	}
+
+	.nav-links li {
+		opacity: 0;
+		padding: 48px;
+	}
+
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes nav-link-fade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line-1 {
+	transform: rotate(-45deg) translate(-5px, 4.5px);
+}
+.toggle .line-2 {
+	opacity: 0;
+}
+.toggle .line-3 {
+	transform: rotate(45deg) translate(-5px, -4.5px);
 }
 
 /* -----------------------------------------    HERO SECTION    -------------------------------------------- */
@@ -244,6 +312,8 @@ a {
 .card-container {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	gap: 32px;
 }
 
@@ -260,7 +330,7 @@ a {
 	padding: 24px 32px;
 	border-radius: 24px;
 	text-align: center;
-	max-width: 220px;
+	width: 60%;
 	top: 0px;
 	position: relative;
 	overflow: hidden;
@@ -353,6 +423,17 @@ a {
 	margin-top: 0%;
 }
 
+@media screen and (min-width: 940px) {
+	.card-container {
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.card {
+		max-width: 220px;
+	}
+}
+
 /* -----------------------------    CUSTOMER QUOTES SECTION    ----------------------------- */
 
 .quotes-section {
@@ -362,6 +443,7 @@ a {
 .quote-container {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 32px;
 }
 
@@ -369,7 +451,7 @@ a {
 	background-color: var(--tan);
 	border-radius: 24px;
 	padding: 36px;
-	width: 400px;
+	width: 60%;
 	text-align: center;
 	border: var(--light-green) 1px solid;
 	box-shadow: 0 4px 8px 0 rgba(46, 45, 65, 0.02);
@@ -382,6 +464,16 @@ a {
 .customer {
 	margin-top: 16px;
 	font-size: 16px;
+}
+
+@media screen and (min-width: 940px) {
+	.quote-container {
+		flex-direction: row;
+	}
+
+	.quote-card {
+		max-width: 400px;
+	}
 }
 
 /* -----------------------------    PERSONAL PROJECTS SECTION    ----------------------------- */
@@ -402,7 +494,13 @@ footer {
 .footer-flex {
 	display: flex;
 	justify-content: center;
-	gap: 5%;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.footer-column {
+	padding: 24px 36px;
 }
 
 .footer-column p {
@@ -412,11 +510,12 @@ footer {
 
 .footer-column ul {
 	list-style: none;
-	padding: 16px 0;
+	margin-top: 16px;
+	padding: 0;
 }
 
 .footer-column li {
-	padding: 4px 0;
+	padding: 8px 0;
 }
 
 .footer-column a {
@@ -435,6 +534,19 @@ footer {
 	text-align: center;
 	font-size: 14px;
 	color: var(--dark-grey);
+}
+
+@media screen and (min-width: 940px) {
+	.footer-flex {
+		flex-direction: row;
+		/* gap: 5%; */
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.footer-column li {
+		padding: 4px 0;
+	}
 }
 
 /* --------------------------------   FILTERS   ---------------------------------- */
