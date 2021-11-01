@@ -8,11 +8,9 @@
 
 /* -------------------------    GLOBAL    -------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Work+Sans:wght@300;400;500;700&display=swap');
-
 @font-face {
-	font-family: 'Made Gentle';
-	src: url('fonts/Made Gentle.otf');
+	font-family: 'Made Sunflower';
+	src: url('fonts/MADE Sunflower.otf');
 }
 
 @font-face {
@@ -21,8 +19,8 @@
 }
 
 @font-face {
-	font-family: 'Trap-Medium';
-	src: url('fonts/Trap-Medium.otf');
+	font-family: 'Trap-SemiBold';
+	src: url('fonts/Trap-SemiBold.otf');
 }
 
 :root {
@@ -55,7 +53,7 @@
 
 * {
 	margin: 0;
-	font-family: 'Trap-Medium', sans-serif;
+	font-family: 'Trap-SemiBold', sans-serif;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -65,28 +63,32 @@ body {
 	background-color: #ffffff;
 	color: var(--dark-grey);
 	background-color: var(--light-tan);
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1 {
-	font-family: 'Made Gentle', sans-serif;
-	font-size: 64px;
-	font-weight: 500;
+	font-family: 'Made Sunflower', sans-serif;
+	font-size: 5rem;
 }
 
 h2 {
-	font-family: 'Made Gentle', sans-serif;
-	font-size: 36px;
+	font-family: 'Made Sunflower', sans-serif;
+	font-size: 2rem;
 }
 
 h3 {
-	font-family: 'Made Gentle', sans-serif;
-	font-size: 24px;
-	font-weight: 300;
+	font-family: 'Made Sunflower', sans-serif;
+	font-size: 1.5rem;
+
 	color: var(--dark-grey);
 }
 
 p {
-	font-size: 18px;
+	font-size: 1.25rem;
+	line-height: 1.525rem;
 	color: var(--dark-grey);
 }
 
@@ -135,7 +137,6 @@ a {
 
 .btn-lg {
 	font-size: 14.5px;
-	font-weight: 500;
 	color: var(--dark-grey);
 
 	border-radius: 12px;
@@ -170,13 +171,13 @@ a {
 /* -----------------------------------------    MAIN NAV SECTION    -------------------------------------------- */
 
 .top-nav {
-	height: 10vh;
-	background-color: #f1ede6;
+	background-color: var(--tan);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 24px;
 	border-bottom: var(--light-green) solid 1px;
+	height: 10vh;
 }
 
 .top-nav-logo {
@@ -200,10 +201,13 @@ a {
 	margin: 4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 748px) {
 	body {
 		overflow-x: hidden;
-		/* position: fixed; */
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
 	}
 	.nav-links {
 		position: absolute;
@@ -218,7 +222,6 @@ a {
 		width: 100%;
 		transform: translateX(100%);
 		z-index: 1;
-		/* overflow: hidden; */
 	}
 
 	.nav-links li {
@@ -269,11 +272,6 @@ a {
 	flex-direction: column;
 }
 
-/* .hero-text {
-	width: 500px;
-	margin-right: 60px;
-} */
-
 .name {
 	font-size: 144px;
 	background-image: url('img/needles.jpg');
@@ -288,7 +286,7 @@ a {
 
 .hero-blurb {
 	margin: -12px auto 24px;
-	max-width: 300px;
+	max-width: 350px;
 	text-align: center;
 }
 
@@ -359,15 +357,9 @@ a {
 
 .overlay-text {
 	font-family: 'Trap-Black', sans-serif;
-	font-size: 24px;
+	font-size: 1.5rem;
 	width: 60%;
 }
-
-/* .card:hover .dimmer {
-	opacity: 0;
-	-webkit-opacity: 0;
-	-moz-opacity: 0;
-} */
 
 .card-1 .card-overlay {
 	background-color: var(--light-red);
@@ -430,7 +422,7 @@ a {
 	}
 
 	.card {
-		max-width: 220px;
+		max-width: 260px;
 	}
 }
 
@@ -458,12 +450,13 @@ a {
 }
 
 .quote {
-	font-size: 24px;
+	font-size: 2rem;
+	line-height: 2.5rem;
 }
 
 .customer {
 	margin-top: 16px;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 @media screen and (min-width: 940px) {
@@ -519,8 +512,7 @@ footer {
 }
 
 .footer-column a {
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 1rem;
 	text-decoration: none;
 	color: var(--dark-grey);
 }
@@ -539,9 +531,15 @@ footer {
 @media screen and (min-width: 940px) {
 	.footer-flex {
 		flex-direction: row;
-		/* gap: 5%; */
 		align-items: flex-start;
 		text-align: left;
+		justify-content: space-evenly;
+		width: 80%;
+		margin: auto;
+	}
+
+	.footer-column {
+		padding: 24px 24px;
 	}
 
 	.footer-column li {
@@ -553,12 +551,13 @@ footer {
 
 .page-filter {
 	text-align: center;
+	margin-top: 48px;
 }
 
 .page-filter p {
 	margin-bottom: 8px;
 	color: var(--grey);
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .filter-list {
@@ -566,14 +565,17 @@ footer {
 	list-style: none;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
+	/* justify-content: space-evenly; */
 }
 
 .filter-option {
 	margin: 0 8px;
 	border-radius: 8px;
-	font-size: 16px;
-	padding: 8px 12px;
+	padding: 9px 12px 8px;
 	cursor: pointer;
+	font-size: 1.25rem;
+	max-width: 20%;
 }
 
 .filter-option:hover {
@@ -591,7 +593,19 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 110px 0 24px 0;
+	margin: 110px 12px 24px;
+	text-align: center;
+	flex-direction: column;
+	line-height: 5rem;
+}
+
+.page-title h1 {
+	font-size: 4rem;
+	line-height: 4rem;
+}
+
+.page-title-text {
+	margin-top: 24px;
 }
 
 .page-title img {
@@ -611,26 +625,21 @@ footer {
 
 .case-study {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	background: var(--tan);
 	padding: 36px 72px;
 	border-radius: 24px;
 	margin-bottom: 24px;
-	/* border: var(--light-tan) 1px solid; */
-}
-
-.case-study-title {
-	margin-right: 50px;
 }
 
 .case-study-title p {
 	color: var(--grey);
-	margin-top: 8px;
+	margin-top: 12px;
 }
 
 .case-study-logo {
 	width: 200px;
-	/* right: 0; */
+	margin-bottom: 24px;
 }
 
 img.contain {
@@ -641,3 +650,50 @@ img.contain {
 	border: var(--light-primary) 1px solid;
 	box-shadow: 0 4px 4px 0 rgba(46, 45, 65, 0.02);
 } */
+
+@media screen and (max-width: 600px) {
+	.page-title {
+		margin-top: 48px;
+	}
+
+	.case-study {
+		text-align: center;
+		padding: 36px 36px;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 1090px) {
+	.case-study {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	.case-study-title {
+		margin-right: 50px;
+	}
+
+	.case-study-logo {
+		order: 1;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.page-title {
+		align-items: center;
+		justify-content: center;
+		margin: 110px 0 24px 0;
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.page-title h1 {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+
+	.page-title-text {
+		margin-top: 0;
+	}
+}
