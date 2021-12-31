@@ -9,8 +9,8 @@
 /* -------------------------    GLOBAL    -------------------------- */
 
 @font-face {
-	font-family: 'Made Sunflower';
-	src: url('fonts/MADE Sunflower.otf');
+	font-family: 'Made Dillan';
+	src: url('fonts/MADE Dillan.otf');
 }
 
 @font-face {
@@ -70,17 +70,17 @@ body {
 }
 
 h1 {
-	font-family: 'Made Sunflower', sans-serif;
+	font-family: 'Made Dillan', sans-serif;
 	font-size: 5rem;
 }
 
 h2 {
-	font-family: 'Made Sunflower', sans-serif;
+	font-family: 'Made Dillan', sans-serif;
 	font-size: 2rem;
 }
 
 h3 {
-	font-family: 'Made Sunflower', sans-serif;
+	font-family: 'Made Dillan', sans-serif;
 	font-size: 1.5rem;
 
 	color: var(--dark-grey);
@@ -728,26 +728,33 @@ img.contain {
 	font-size: 4rem;
 	line-height: 4rem;
 	text-align: center;
-	margin: 80px auto 24px;
+	margin: 80px auto 48px;
+	width: 90%;
+}
+
+.case-study-section h2 {
+	margin-bottom: 24px;
 }
 
 .case-study-subtitle {
 	text-align: center;
-	max-width: 60%;
+	max-width: 80%;
 	margin: auto;
+	padding: 0 5% 0;
 }
 
 .case-study-banner {
-	object-fit: cover;
+	object-fit: contain;
 	min-height: 250px;
-	width: 100%;
-	margin: 48px auto 48px;
+	width: 90%;
+	margin: 12px auto 12px;
 }
 
 .case-study-brief {
 	text-align: center;
 	width: 85%;
 	margin: auto;
+	font-size: 1rem;
 }
 
 .case-study-section {
@@ -769,8 +776,6 @@ img.contain {
 }
 
 .case-study-section ul li p {
-	font-size: 1rem;
-	line-height: 1.25rem;
 	margin-top: 24px;
 	max-width: 60%;
 }
@@ -778,9 +783,12 @@ img.contain {
 .case-study-image {
 	border-radius: 16px;
 	border: var(--light-green) 1px solid;
-	box-shadow: 0 4px 8px 0 rgba(46, 45, 65, 0.02);
 	width: 100%;
-	max-width: 350px;
+	max-width: 400px;
+}
+
+.case-study-image-set p {
+	font-size: 1rem;
 }
 
 .link-to-client-site {
@@ -801,42 +809,42 @@ img.contain {
 }
 
 @media screen and (min-width: 648px) {
+	.case-study-subtitle {
+		max-width: 700px;
+	}
+
+	.case-study-banner {
+		max-height: 550px;
+	}
+
 	.case-study-brief {
 		text-align: center;
 		max-width: 550px;
 		margin: auto;
 	}
 
+	.case-study-image-set {
+		display: flex;
+		justify-content: center;
+	}
+
 	.case-study-section ul {
-		/* display: flex; */
-		/* flex-direction: column; */
-		/* justify-content: center; */
-		/* align-items: center; */
-		width: 100%;
-		margin: auto;
+		margin: 24px 5% 24px;
 	}
 
 	.case-study-section ul li {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-		/* justify-content: center; */
-		margin: 24px 10% 0;
 	}
 
 	.case-study-section ul li p {
 		text-align: left;
-		font-size: 1rem;
-		line-height: 1.25rem;
 		margin-top: 0px;
 		max-width: 350px;
-		margin-left: 8%;
+		margin-left: 20px;
 	}
 
-	.case-study-image {
-		border-radius: 16px;
-		border: var(--light-green) 1px solid;
-		box-shadow: 0 4px 8px 0 rgba(46, 45, 65, 0.02);
-		width: auto;
+	.link-to-client-site a:hover {
+		color: var(--green);
 	}
 }
