@@ -8,16 +8,31 @@
 			content="width=device-width,initial-scale=1,minimum-scale=1"
 		/>
 		<meta charset="utf-8" />
+		<script src="nav.js" defer></script>
 	</head>
 
 	<body>
-		<header>
-			<nav class="top-nav">
-				<a class="top-nav-logo" href="index.html">
+		<header class="primary-header flex">
+			<div class="logo">
+				<a href="index.html">
 					<h2>R.</h2>
 				</a>
+			</div>
 
-				<ul class="nav-links">
+			<button
+				class="mobile-nav-toggle"
+				aria-controls="primary-navigation"
+				aria-expanded="false"
+			>
+				<span class="sr-only">Menu</span>
+			</button>
+
+			<nav>
+				<ul
+					id="primary-navigation"
+					data-visible="false"
+					class="primary-navigation flex"
+				>
 					<li>
 						<a class="icon-link" href="freelance-work.html">
 							<svg
@@ -128,7 +143,7 @@
 					with emphasis on clarity and theme, leading to greater conversions.
 				</p>
 				<img
-					src="img/anger and anxiety therapists/hero.png"
+					src="img/shlomo-radcliffe-and-associates/hero.png"
 					alt="banner image"
 					class="case-study-banner"
 				/>
@@ -146,7 +161,7 @@
 				<h2>Branding</h2>
 				<p class="case-study-subtitle"></p>
 				<img
-					src="img/anger and anxiety therapists/brand guidelines.png"
+					src="img/shlomo-radcliffe-and-associates/brand guidelines.png"
 					alt="banner image"
 					class="case-study-banner"
 				/>
@@ -159,7 +174,7 @@
 					<ul>
 						<li>
 							<img
-								src="img/anger and anxiety therapists/colors.png"
+								src="img/shlomo-radcliffe-and-associates/colors.png"
 								alt=""
 								class="case-study-image"
 							/>
@@ -171,7 +186,7 @@
 						</li>
 						<li>
 							<img
-								src="img/anger and anxiety therapists/typography.png"
+								src="img/shlomo-radcliffe-and-associates/typography.png"
 								alt=""
 								class="case-study-image"
 							/>
@@ -183,7 +198,7 @@
 						</li>
 						<li>
 							<img
-								src="img/anger and anxiety therapists/logotype.png"
+								src="img/shlomo-radcliffe-and-associates/logotype.png"
 								alt=""
 								class="case-study-image"
 							/>
@@ -196,7 +211,7 @@
 				</div>
 
 				<img
-					src="img/anger and anxiety therapists/graphics banner.png"
+					src="img/shlomo-radcliffe-and-associates/graphics banner.png"
 					alt="banner image"
 					class="case-study-banner"
 				/>
@@ -210,7 +225,7 @@
 					use in the Wix editor.
 				</p>
 				<img
-					src="img/anger and anxiety therapists/anger management counselling.png"
+					src="img/shlomo-radcliffe-and-associates/anger management counselling.png"
 					alt="banner image"
 					class="case-study-banner"
 				/>
@@ -220,7 +235,7 @@
 					titles with a contrasting font.
 				</p>
 				<img
-					src="img/anger and anxiety therapists/our approach.png"
+					src="img/shlomo-radcliffe-and-associates/our approach.png"
 					alt="banner image"
 					class="case-study-banner"
 				/>
@@ -229,7 +244,7 @@
 					to individual elements in a group.
 				</p>
 				<img
-					src="img/anger and anxiety therapists/contact and footer.png"
+					src="img/shlomo-radcliffe-and-associates/contact and footer.png"
 					alt="banner image"
 					class="case-study-banner"
 				/>
@@ -257,7 +272,7 @@
 				<div class="link-to-client-site">
 					<img
 						class="client-logo"
-						src="img/shlomo-radcliffe-logo.png"
+						src="img/shlomo-radcliffe-and-associates/shlomo-radcliffe-logo.png"
 						alt="Shlomo Radcliffe and Associates Logo"
 					/>
 					<a href="">www.angerandanxiety.com</a>

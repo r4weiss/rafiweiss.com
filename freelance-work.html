@@ -8,15 +8,30 @@
 			content="width=device-width,initial-scale=1,minimum-scale=1"
 		/>
 		<meta charset="utf-8" />
+		<script src="nav.js" defer></script>
 	</head>
 	<body>
-		<header>
-			<nav class="top-nav">
-				<a class="top-nav-logo" href="index.html">
+		<header class="primary-header flex">
+			<div class="logo">
+				<a href="index.html">
 					<h2>R.</h2>
 				</a>
+			</div>
 
-				<ul class="nav-links">
+			<button
+				class="mobile-nav-toggle"
+				aria-controls="primary-navigation"
+				aria-expanded="false"
+			>
+				<span class="sr-only">Menu</span>
+			</button>
+
+			<nav>
+				<ul
+					id="primary-navigation"
+					data-visible="false"
+					class="primary-navigation flex"
+				>
 					<li>
 						<a class="icon-link" href="freelance-work.html">
 							<svg
@@ -144,26 +159,7 @@
 							class="case-study case-study-1"
 						>
 							<img
-								src="img/shlomo-radcliffe-logo.png"
-								alt="shlomo radcliffe & associates logo"
-								class="case-study-logo contain"
-							/>
-							<div class="case-study-title">
-								<h3>Shlomo Radcliffe & Associates</h3>
-								<p>
-									Therapist website, built using WIX, including custom brand
-									identity and graphics
-								</p>
-							</div>
-							<div class="case-study-overlay">
-								<div class="overlay-text">Open case study</div>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" class="case-study case-study-2">
-							<img
-								src="img/shlomo-radcliffe-logo.png"
+								src="img/shlomo-radcliffe-and-associates/shlomo-radcliffe-logo.png"
 								alt="shlomo radcliffe & associates logo"
 								class="case-study-logo contain"
 							/>
@@ -250,6 +246,6 @@
 			</div>
 		</footer>
 
-		<script src="app.js"></script>
+		<!-- <script src="app.js"></script> -->
 	</body>
 </html>
