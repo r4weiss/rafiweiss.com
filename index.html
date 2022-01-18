@@ -8,16 +8,31 @@
 			content="width=device-width,initial-scale=1,minimum-scale=1"
 		/>
 		<meta charset="utf-8" />
+		<script src="nav.js" defer></script>
 	</head>
 
 	<body>
-		<header>
-			<nav class="top-nav">
-				<a class="top-nav-logo" href="#">
+		<header class="primary-header flex">
+			<div class="logo">
+				<a href="#">
 					<h2>R.</h2>
 				</a>
+			</div>
 
-				<ul class="nav-links">
+			<button
+				class="mobile-nav-toggle"
+				aria-controls="primary-navigation"
+				aria-expanded="false"
+			>
+				<span class="sr-only">Menu</span>
+			</button>
+
+			<nav>
+				<ul
+					id="primary-navigation"
+					data-visible="false"
+					class="primary-navigation flex"
+				>
 					<li>
 						<a class="icon-link" href="freelance-work.html">
 							<svg
@@ -188,9 +203,12 @@
 				<div class="quote-container">
 					<div class="quote-card">
 						<p class="quote">
-							“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+							“Rafi was a pleasure to work with and I couldn't be happier with
+							the results. I'd highly recommend working with him.”
 						</p>
-						<p class="customer">Customer name | Company name</p>
+						<p class="customer">
+							Shlomo Radcliffe | Shlomo Radcliffe & Associates
+						</p>
 					</div>
 				</div>
 			</section>
@@ -311,6 +329,6 @@
 			</div>
 		</footer>
 
-		<script src="app.js"></script>
+		<!-- <script src="app.js"></script> -->
 	</body>
 </html>
