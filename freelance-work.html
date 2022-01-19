@@ -133,7 +133,7 @@
 		</header>
 
 		<main>
-			<!------------------ FILTER SECTION ------------------>
+			<!------------------ TITLE & FILTER SECTION ------------------>
 
 			<section>
 				<div class="page-title">
@@ -144,20 +144,22 @@
 				<div class="page-filter freelance-filter">
 					<p>Filter by:</p>
 					<ul class="filter-list">
-						<li class="filter-option">Graphic design</li>
-						<li class="filter-option">Web design</li>
-						<li class="filter-option">App design</li>
+						<li class="filter-option filter-active" data-filter="all">All</li>
+						<li class="filter-option" data-filter="graphic-design">
+							Graphic design
+						</li>
+						<li class="filter-option" data-filter="web-design">Web design</li>
+						<li class="filter-option" data-filter="app-design">App design</li>
 					</ul>
 				</div>
 			</section>
 
+			<!------------------ CASE STUDY SECTION ------------------>
+
 			<section class="case-study-list">
 				<ul>
-					<li>
-						<a
-							href="shlomo-radcliffe-and-associates.html"
-							class="case-study case-study-1"
-						>
+					<li class="case-study" data-item="web-design">
+						<a href="shlomo-radcliffe-and-associates.html">
 							<img
 								src="img/shlomo-radcliffe-and-associates/shlomo-radcliffe-logo.png"
 								alt="shlomo radcliffe & associates logo"
@@ -165,6 +167,44 @@
 							/>
 							<div class="case-study-title">
 								<h3>Shlomo Radcliffe & Associates</h3>
+								<p>
+									Therapist website, built using WIX, including custom brand
+									identity and graphics
+								</p>
+							</div>
+							<div class="case-study-overlay">
+								<div class="overlay-text">Open case study</div>
+							</div>
+						</a>
+					</li>
+					<li class="case-study" data-item="web-design">
+						<a href="shlomo-radcliffe-and-associates.html">
+							<img
+								src="img/shlomo-radcliffe-and-associates/shlomo-radcliffe-logo.png"
+								alt="shlomo radcliffe & associates logo"
+								class="case-study-logo contain"
+							/>
+							<div class="case-study-title">
+								<h3>WEB ONLY</h3>
+								<p>
+									Therapist website, built using WIX, including custom brand
+									identity and graphics
+								</p>
+							</div>
+							<div class="case-study-overlay">
+								<div class="overlay-text">Open case study</div>
+							</div>
+						</a>
+					</li>
+					<li class="case-study" data-item="app-design">
+						<a href="shlomo-radcliffe-and-associates.html">
+							<img
+								src="img/shlomo-radcliffe-and-associates/shlomo-radcliffe-logo.png"
+								alt="shlomo radcliffe & associates logo"
+								class="case-study-logo contain"
+							/>
+							<div class="case-study-title">
+								<h3>APP ONLY</h3>
 								<p>
 									Therapist website, built using WIX, including custom brand
 									identity and graphics
@@ -246,6 +286,6 @@
 			</div>
 		</footer>
 
-		<!-- <script src="app.js"></script> -->
+		<script src="filter.js"></script>
 	</body>
 </html>
