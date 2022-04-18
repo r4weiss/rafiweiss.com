@@ -1,5 +1,6 @@
 let filterOption = document.querySelectorAll('.filter-option');
 let caseStudy = document.querySelectorAll('.case-study');
+let subject = document.querySelectorAll('.subject');
 
 for (let i = 0; i < filterOption.length; i++) {
 	filterOption[i].addEventListener('click', function () {
@@ -19,6 +20,19 @@ for (let i = 0; i < filterOption.length; i++) {
 				dataFilter == 'all'
 			) {
 				caseStudy[k].classList.remove('hide');
+				// caseStudy[k].classList.add('filter-active');
+			}
+		}
+
+		for (let l = 0; l < subject.length; l++) {
+			subject[l].classList.remove('filter-active');
+			subject[l].classList.add('hide');
+
+			if (
+				subject[l].getAttribute('data-item') == dataFilter ||
+				dataFilter == 'all'
+			) {
+				subject[l].classList.remove('hide');
 				// caseStudy[k].classList.add('filter-active');
 			}
 		}
