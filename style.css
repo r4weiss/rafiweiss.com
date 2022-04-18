@@ -922,3 +922,238 @@ img.contain {
 		color: var(--green);
 	}
 }
+
+/* ------ PERSONAL PROJECTS ------- */
+
+/* Page title and filter is in the Freelance Work section */
+
+.subject-list {
+	margin: 80px auto 180px;
+	/* width: 70%; */
+}
+
+.subject-list ul {
+	padding: 0;
+	list-style: none;
+}
+
+.subject.hide {
+	display: none;
+}
+
+.subject a {
+	display: flex;
+	flex-direction: column;
+	background: var(--tan);
+	padding: 36px 36px;
+	border-radius: 24px;
+	margin: 0 auto 24px;
+	width: 70%;
+	top: 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+.subject-title p {
+	margin-top: 12px;
+}
+
+.subject-logo {
+	max-width: 200px;
+	margin-bottom: 24px;
+}
+
+.subject-overlay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 24px;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+
+.subject-overlay {
+	background-color: var(--light-green);
+	color: var(--dark-green);
+}
+
+.subject:hover .subject-overlay {
+	top: 0%;
+}
+
+@media screen and (min-width: 1090px) {
+	.subject a {
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 36px 72px;
+		width: 60%;
+	}
+
+	.subject-overlay {
+		transition: top 0.3.5s ease-in-out;
+		-webkit-transition: top 0.3.5s ease-in-out;
+		-moz-transition: top 0.3.5s ease-in-out;
+	}
+
+	.subject-title {
+		margin-right: 50px;
+	}
+
+	.subject-logo {
+		order: 1;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.page-title {
+		align-items: center;
+		justify-content: center;
+		margin: 110px 0 24px 0;
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.page-title h1 {
+		font-size: 5rem;
+		line-height: 5rem;
+	}
+
+	.page-title-text {
+		margin-top: 0;
+	}
+}
+
+/*  ------- PERSONAL PROJECTS SUBJECT PAGE --------- */
+
+.subject-page-hero h1 {
+	font-size: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	margin: 80px auto 48px;
+	width: 90%;
+}
+
+.subject-section h2 {
+	margin-bottom: 24px;
+}
+
+.subject-subtitle {
+	text-align: center;
+	max-width: 80%;
+	margin: auto;
+	padding: 0 5% 0;
+}
+
+.subject-banner {
+	object-fit: contain;
+	min-height: 250px;
+	width: 90%;
+	margin: 12px auto 12px;
+}
+
+.subject-brief {
+	text-align: center;
+	width: 85%;
+	margin: auto;
+	font-size: 1rem;
+}
+
+.subject-section {
+	margin-top: 80px;
+	text-align: center;
+}
+
+.subject-section ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 48px;
+}
+
+.subject-section ul li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 24px;
+}
+
+.subject-section ul li p {
+	margin-top: 24px;
+	max-width: 60%;
+}
+
+.subject-image {
+	border-radius: 16px;
+	border: var(--light-green) 1px solid;
+	width: 100%;
+	max-width: 400px;
+}
+
+.subject-image-set p {
+	font-size: 1rem;
+}
+
+.link-to-client-site {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 48px auto 80px;
+}
+
+.link-to-client-site img {
+	width: 200px;
+	margin-bottom: 24px;
+}
+
+.link-to-client-site a {
+	font-size: 1.25rem;
+}
+
+@media screen and (min-width: 648px) {
+	.subject-subtitle {
+		max-width: 700px;
+	}
+
+	.subject-banner {
+		max-height: 550px;
+	}
+
+	.subject-brief {
+		text-align: center;
+		max-width: 550px;
+		margin: auto;
+	}
+
+	.subject-image-set {
+		display: flex;
+		justify-content: center;
+	}
+
+	.subject-section ul {
+		margin: 24px 5% 24px;
+	}
+
+	.subject-section ul li {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.subject-section ul li p {
+		text-align: left;
+		margin-top: 0px;
+		max-width: 350px;
+		margin-left: 20px;
+	}
+
+	.link-to-client-site a:hover {
+		color: var(--green);
+	}
+}

@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<script src="nav.js" defer></script>
 	</head>
+
 	<body>
 		<header class="primary-header flex">
 			<div class="logo">
@@ -133,48 +134,43 @@
 		</header>
 
 		<main>
-			<!------------------ TITLE & FILTER SECTION ------------------>
-
-			<section>
-				<div class="page-title">
-					<img src="img/icons/Box_perspective_matte.png" alt="star icon" />
-					<h1 class="page-title-text">Personal Projects</h1>
-				</div>
-
-				<div class="page-filter freelance-filter">
-					<p>Filter by:</p>
-					<ul class="filter-list">
-						<li class="filter-option filter-active" data-filter="all">All</li>
-						<li class="filter-option" data-filter="art">Art</li>
-						<li class="filter-option" data-filter="code">Code</li>
-						<li class="filter-option" data-filter="archive">Archive</li>
-					</ul>
-				</div>
+			<!----------------------- HERO ------------------------>
+			<section class="subject-page-hero subject-section">
+				<h1>Watercolor Art</h1>
+				<p class="subject-subtitle">
+					The client wished to move from their Wix starter template to a custom
+					designed site. Using Wix's editor, I created a more focused design,
+					with emphasis on clarity and theme, leading to greater conversions.
+				</p>
+				<img
+					src="img/shlomo-radcliffe-and-associates/hero.png"
+					alt="banner image"
+					class="subject-banner"
+				/>
+				<p class="subject-brief">
+					For this client, the most important aspect of their new website was
+					that it should be cohesive and extensive. They were coming from a
+					simple Wix starter template and found it frustrating that new pages
+					they added did not match the others they already had, nor was the
+					mobile version optimized at all.
+				</p>
 			</section>
 
-			<!------------------ SUBJECT SECTION ------------------>
-
-			<section class="subject-list">
-				<ul>
-					<li class="subject" data-item="art">
-						<a href="watercolor.html">
-							<div class="subject-title">
-								<h3>Watercolor</h3>
-								<p>
-									Therapist website, built using WIX, including custom brand
-									identity and graphics
-								</p>
-							</div>
-							<div class="subject-overlay">
-								<div class="overlay-text">View Art</div>
-							</div>
-						</a>
-					</li>
-				</ul>
+			<!----------------------- ARTWORK ------------------------>
+			<section class="subject-section gallery-section">
+				<h2>Artwork</h2>
+				<img
+					src="img/shlomo-radcliffe-and-associates/brand guidelines.png"
+					alt="banner image"
+					class="subject-banner"
+				/>
+				<p class="subject-brief">
+					To ensure the client would be able to manage the site after the
+					project was finished, I used clean and simple shapes, with a minimal
+					amount of colors.
+				</p>
 			</section>
 		</main>
-
-		<!------------------ FOOTER SECTION ------------------>
 
 		<footer>
 			<div class="footer-flex">
@@ -241,6 +237,6 @@
 			</div>
 		</footer>
 
-		<script src="filter.js"></script>
+		<!-- <script src="app.js"></script> -->
 	</body>
 </html>
